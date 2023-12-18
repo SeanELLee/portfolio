@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv = "X-UA-COmpatible" content = "IE=edge">
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+    <title>Portfolio</title>
+    <link rel = "stylesheet" href = "style.css">
+    <script src = "https://kit.fontawesome.com/4524c33819.js" crossorigin="anonymous"></script>
+    <script src = "/logics/frontend.js" defer></script>
+    <script src = "/logics/backend.js" defer></script>
+</head>
+<body>
+
+<div id = "header">
+    <div class = "container">
+        <nav>
+            <img src = "images/logo.png" class="logo">
+            <ul id = "sidemenu">
+                <li><a href = "#header">Home</a></li>
+                <li><a href = "#about">About</a></li>
+                <li><a href = "#portfolio">My Work</a></li>
+                <li><a href = "#contact">Contact</a></li>
+                <i class = "fas fa-times" id = "cross" onclick = "closemenu()"></i>
+            </ul>
+            <i class = "fas fa-bars" id = "burger" onclick = "openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Product Engineer</p>
+            <h1>
+                Hi there,<br>
+                this is
+                <span>Sean Lee</span><br>
+                from Canada
+            </h1>
+        </div>
+        <div id = "header-layer"></div>
+    </div>
+</div> 
+<!---------------About Section--------------->
+<div id = "about">
+    <div class = "container">
+        <div class = "row">
+            <div class = "about-col-1">
+                <img src = "images/user.png">
+            </div>
+            <div class = "about-col-2">
+                <h1 class = "sub-title">About Me</h1>
+                <p>I am a passionate and self-motivated Maker, 
+                    dedicated to turning concepts into reality. 
+                    Fueled by curiosity and a desire to make a difference, 
+                    my goal is to create impactful products that solve real-world problems 
+                    and improve lives. I thrive on the journey of design, development, 
+                    and implementation.
+                </p>
+                <div class = "tab-titles">
+                    <p class = "tab-links active-link" onclick = "opentab('skills')">Specialization</p>
+                    <p class = "tab-links" onclick = "opentab('experience')">Experience</p>
+                    <p class = "tab-links" onclick = "opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id = "skills">
+                    <ul>
+                        <li><span>Prototype Design</span><br>Experience in biomedical prototype development.</li>
+                        <li><span>Software Development</span><br>Desktop software development in Python. Specialized in software design.</li>
+                        <li><span>Arduino Development</span><br>Hardware control and arduino communication.</li>
+                        <li><span>Administrative</span><br>Improve usability for complicated ISO procedures and provide mentorship<br>
+                            to Interns and Co-op students.</li>
+                        <li><span>Photography</span><br>Landscape and Street Photography</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id = "experience">
+                    <ul>
+                        <li><span>2022 - Current</span><br>Project Engineer at PhoMedics</li>
+                        <li><span>2023 - Current</span><br>Research Assistant at Hong Kong University of Science and Technology</li>
+                        <li><span>2022 - 2023</span><br>Project Engineer at V Path</li>
+                        <li><span>2021 - 2022</span><br>Assistant Engineer at Maxgrand</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id = "education">
+                    <ul>
+                        <li><span>2023</span><br>Google IT Automation with Python Specialization from Coursera</li>
+                        <li><span>2023</span><br>Google Project Management Specialization from Coursera</li>
+                        <li><span>2021</span><br>Bachelor of Engineering from City University of Hong Kong</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------Portfolio---------------->
+
+<div id="portfolio">
+    <div class = "container">
+        <h1 class = "sub-title">My Work</h1>
+        <div class = " work-list">
+            <div class = "work">
+                <img src = "images/work-1.png">
+                <div class = "layer">
+                    <h3>MAVIS-Lite</h3>
+                    <p>Revolutionary biomedical prototype enables virtual staining for 
+                        conventional microscopes, enhancing visualization and analysis 
+                        of biological samples, opening new possibilities in research.                    
+                    </p>
+                    <!--<a href = "page_mavis_lite/mavis_lite_page.html"><i class = " fas fa-external-link-alt"></i></a>-->
+                </div>
+            </div>
+            <div class = "work">
+                <img src = "images/work-4.png">
+                <div class = "layer">
+                    <h3>CHAMP Casing Design</h3>
+                    <p>A Casing design for CHAMP to turn CHAMP from a boring prototype into
+                        a semi product level prototype improving the overall usability.                  
+                    </p>
+                    <!--<a href = "page_mavis_lite/mavis_lite_page.html"><i class = " fas fa-external-link-alt"></i></a>-->
+                </div>
+            </div>
+            <div class = "work">
+                <img src = "images/work-2.png">
+                <div class = "layer">
+                    <h3>Modular Software Structure</h3>
+                    <p>A modular software structure that enhances cross-functional collaboration 
+                        by establishing interfaces and protocols, improving efficiency 
+                        and communication among different teams.
+                    </p>
+                    <a href = "https://github.com/SeanELLee/My_Homemade_Architecture"><i class = " fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class = "work">
+                <img src = "images/work-3.png">
+                <div class = "layer">
+                    <h3>Voice AI Chatbot</h3>
+                    <p>A personal project to create a voice-enabled Chatbot 
+                        using voice recognition and the ChatGPT API, 
+                        combining my passion for technology and 
+                        natural language processing.
+                    </p>
+                    <a href = "https://github.com/SeanELLee/VoiceChatBot"><i class = " fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-----For future---->
+    </div>
+</div>
+
+<!----------------contact----------------->
+<div id = "contact">
+    <div class = "container">
+        <div class = "row">
+            <div class = "contact-left">
+                <h1 class = "sub-title">Contact Me</h1>
+                <p><i class = "fab fa-google"></i><a href = "mailto:seankitwahlee@gmail.com">seankitwahlee@gmail.com</a></p>
+                <div class = " social-icons">
+                    <a href = "https://github.com/SeanELLee" target="_blank"><i class = "fab fa-github"></i></a>
+                    <a href = "https://www.instagram.com/seanlee97324/" target="_blank"><i class = "fab fa-instagram"></i></a>
+                    <a href = "https://www.linkedin.com/in/seankwleepdeng" target="_blank"><i class = "fab fa-linkedin"></i></a>
+                </div>
+                <a href = "images/my-cv.pdf" download class = "btn btn2">Download CV</a>
+            </div>
+            <div class = "contact-right">
+                <form name = "submit-to-google-sheet">
+                    <input type = "text" name = "Name" placeholder = "Your Name" required>
+                    <input type = "email" name = "Email" placeholder = "Your Email" required>
+                    <textarea name = "Message" rows = "6" placeholder = "Your Message"></textarea>
+                    <button type = "submit" class = "btn btn2">Submit</button>
+                </form>
+                <span id = "msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2023 Sean Lee | All the best</p>
+    </div>
+</div>
+
+</body>
+</html>

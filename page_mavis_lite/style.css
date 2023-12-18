@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppin', sans-serif;
+    box-sizing: border-box;
+}
+
+#cover{
+    position: relative;
+    background: #2c4a52;
+    padding: 0 0 100px;
+    color: #f4ebdb;
+    background-image: url(/images/background.png);
+}
